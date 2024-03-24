@@ -30,7 +30,7 @@ data = {
 
 
 for _ in range(sms_count):
-    data['code'] = verification_code
+ 
     response = requests.post(url, headers=headers, json=data)
     if response.status_code == 200:
         print("SMS Yuborildi!")
